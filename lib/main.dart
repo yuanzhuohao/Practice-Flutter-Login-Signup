@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: NotificationListener(
+        body: NotificationListener<OverscrollIndicatorNotification>(
           onNotification: (overscroll) {
             overscroll.disallowGlow();
           },
